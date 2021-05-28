@@ -1,0 +1,47 @@
+.asesoria{
+    margin: 0 auto;
+    background-color: $white;
+    position: fixed;
+    bottom: -1px;
+    width: 100%;
+    box-shadow: 0px 0px 7px 0px #161b1e2e;
+    .box_asesoria{
+        height: 85px;
+    }
+    .info_asesoria{
+        max-width: 550px;
+        width: 100%;
+        margin: 10px 0 ;
+        .texto_asesoria{    
+            color: $black;
+            font-family: $regular;
+            font-size: 12px;
+            text-align: center;
+            p:first-child{
+                font-family: $bold;
+            }
+            p:last-child{
+                span{
+                    font-family: $bold;
+                    margin-top: 3px;
+                }
+            }
+        }
+        img{
+            position: absolute;
+            bottom: 0;
+            width: 118px;
+            left: -59px;
+            z-index: -1;
+            mix-blend-mode: exclusion;
+        }
+    }
+    .btn_asesoria{
+        margin-right: 0;
+        height: 35px;
+        line-height: 2;
+        &:hover{
+            background-color: $black;
+        }
+    }
+}

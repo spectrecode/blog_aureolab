@@ -1,0 +1,238 @@
+@media only screen and (min-width:768px){
+    .titulo{
+        margin-bottom: 30px;
+        h3{
+            font-size: 30px;
+        }
+    }
+    header{
+        height: 85px;
+        nav {
+            img{
+                width: 120px;
+            }
+            &.nav_logo{
+                img{
+                    width: 180px;
+                }
+            }
+        }
+    }
+    .contacto{
+        padding: 70px;
+        .box_medios_contacto{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .contacto_mail, .contacto_cel{
+                margin: 0;
+                a{
+                    font-size: 24px;
+                }
+            }
+        }
+        .box_contacto{
+            > p{
+                font-size: 38px;
+            }
+            .btn_negro{
+                margin: 40px auto;
+            }
+        }
+    }
+    .asesoria{
+        .box_asesoria{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        .info_asesoria{
+            display: flex;
+            align-items: center;
+            .texto_asesoria{    
+                color: $black;
+                font-family: $regular;
+                margin-left: 15px;
+                text-align: initial;
+                p{
+                    font-size: initial;
+                    &:last-child{
+                        margin-top: 3px;
+                    }
+                }
+                
+            }
+            img{
+                position: initial;
+                mix-blend-mode: normal;
+                width: initial;
+            }
+        }
+        .btn_asesoria{
+            height:50px;
+            line-height: 2.8;
+            width: 270px;
+
+        }
+    }
+    footer{
+        .box_footer{
+            height: 105px;
+            align-items: center;
+        }
+        .redes{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .work{
+                margin-top: 5px;
+            }
+        }
+    }
+    .blog_home{
+        .entradas{
+            .entrada_reciente{
+                .titulo_blog{
+                    img{
+                        height: 350px;
+                    }
+                }
+                .titulo_blog_post{
+                    height: auto;
+                    position: relative;
+                    padding: 0;
+                    .titulo_post_img{
+                        font-size: 28px;
+                        margin-top: 30px;
+                    }
+                }
+                .contenido_blog{
+                    padding: 0;
+                }
+                .box_contenido{
+                    display: flex;
+                    flex-direction: column;
+                    height: 350px;
+                    padding: 40px;
+                    position: absolute;
+                    justify-content: space-between;
+                }
+            }
+            .otras_entradas{
+                .box_posts{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .post{
+                        width: calc(50% - 10px);
+                    }
+                }
+            }
+            
+        }
+        .buscador_blog{
+            width: 300px;
+        }
+        
+    }
+}
+@media only screen and (min-width:992px){
+    .hidden{
+		display: block;
+	}
+    header{
+        .b_menu{
+            width: 100%;
+            max-width: 745px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            ul{
+                list-style: none;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                a{
+                    display: inline-block;
+                    &::after{
+                      content: '';
+                      display: block;
+                      width: 0;
+                      height: 3px;
+                      background:$yellow;
+                      transition: width .3s;
+                      margin-top: 3px;
+                    }
+                    &:hover:after{
+                        width: 50%;
+                    } 
+                  }
+            }
+            #burguer{
+                display: none;
+            }
+        }
+    }
+    .blog_home{
+        .entradas{
+            .entrada_reciente{
+                .titulo_blog{
+                    img{
+                        height: 350px;
+                    }
+                }
+                .titulo_blog_post{
+                    height: auto;
+                    position: relative;
+                    padding: 0;
+                    .titulo_post_img{
+                        font-size: 28px;
+                        margin-top: 30px;
+                    }
+                }
+                .contenido_blog{
+                    padding: 0;
+                }
+                .box_contenido{
+                    display: flex;
+                    flex-direction: column;
+                    height: 350px;
+                    padding: 40px;
+                    position: absolute;
+                    justify-content: space-between;
+                }
+            }
+            .otras_entradas{
+                width: 74%;
+                margin-right: 20px;
+                display: inline-block;
+            }
+            .buscador_blog{
+                float: right;
+                margin-top: 114px;
+                width: calc(26% - 20px);
+                &.post{
+                    margin-top: 50px;
+                }
+            }
+            .btn_blog{
+                margin-right: calc(109.5% - (75% + 150px));
+            }
+            .column_post{
+                display: flex;
+                align-items: flex-start;
+                img{
+                    margin-top: 0 !important;
+                    width: 337px !important;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (min-width:1200px){
+}
+@media only screen and (min-width:1600px){
+}

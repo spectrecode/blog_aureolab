@@ -1,0 +1,168 @@
+.blog_home{
+    .miga{
+        margin-bottom: 70px;
+        display: flex;
+        align-items: center;
+        height: 15px;
+        font-size: 12px;
+        .active{
+            font-family: $bold;
+        }
+    }
+    .entradas{
+        .box_blog{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            .titulo_blog{
+                width: 100%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 255px;
+                }
+            }
+            .titulo_blog_post{
+                .tag_blog{
+                    display: inline-block;
+                    padding: 5px 20px;
+                    font-size: 10px;
+                    margin-bottom: 18px;
+                    border: 1px solid $yellow;
+                }
+                .fecha_blog{
+                    font-family: $regular;
+                    font-size: 12px;
+                    margin-bottom: 25px;
+                }
+                .titulo_post_img {
+                    font-family: $blackF;
+                    font-size: 22px;
+                }
+            }
+            .contenido_blog{
+                max-width: 635px;
+                width: 100%;
+                padding: 20px;
+                .texto_blog_post{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .entrada_reciente{
+            .box_blog{
+                position: relative;
+                .titulo_blog{
+                    img{
+                        filter: brightness(0.5);
+                    }
+                }
+            }
+            .titulo_blog_post{
+                position: absolute;
+                top: 0;
+                padding: 20px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+            }
+        }
+        .otras_entradas,.box_post{
+            margin-top: 50px;
+            .box_blog{
+                background-color: #333333;
+            }
+            .texto_blog_post{
+                margin-top: 20px;
+            }
+            .box_posts{
+                .post{
+                    margin-bottom: 30px;
+                }
+            }
+            .cuerpo_post{
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+                .column_post{
+                    img{
+                        width: 100%;
+                        height: 216px;
+                        object-fit: cover;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .box_posts{
+                margin-top: 30px;
+            }
+        }
+        
+    }
+    .line_blog{
+        border-top: 1px solid $yellow;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .buscador_blog{
+        background-color: #333333;
+        padding: 25px;
+        width: 100%;
+        margin-top: 50px;
+        .input_search{
+            position: relative;
+            background-color: $white;
+            i{
+                color: $grey;
+                position: absolute;
+                top: 10px;
+                bottom: 0;
+                font-size: 27px;
+                height: 30px;
+                margin-left: 8px;
+            }
+            input{
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 15px 20px;
+                padding-left: 38px;
+                &::placeholder{
+                    color: $grey;
+                }
+                &:focus-visible{
+                    // outline: none;
+                }
+            }
+        }
+        .menu_buscador{
+            p{
+                font-size: 22px;
+                font-family: $bold;
+            }
+            ul{
+                margin-top: 30px;
+                li{
+                    list-style: none;
+                    margin: 10px 0;
+                    .active{
+                        font-family: $bold;
+                    }
+                }
+            }
+            i{
+                font-size: 13px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .btn_blog{
+        margin-top: 50px;
+    }
+
+}

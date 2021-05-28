@@ -1,0 +1,38 @@
+.blog{
+    .box_blog{
+        max-width: 1000px;
+        width: 100%;
+        margin-bottom: 50px;
+        .img_blog{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .contenido_blog{
+            margin-top: 30px;
+            max-width: 635px;
+            width: 100%;
+            .tag_blog{
+                display: inline-block;
+                padding: 5px 20px;
+                font-size: 10px;
+                margin-bottom: 18px;
+                border: 1px solid $yellow;
+            }
+            .fecha_blog{
+                font-family: $regular;
+                font-size: 12px;
+                margin-bottom: 25px;
+            }
+            .titulo_blog_post{
+                font-family: $blackF;
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            .texto_blog_post{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

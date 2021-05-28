@@ -1,0 +1,27 @@
+footer{
+  margin-bottom: 80px;
+    .box_footer{
+      height: 108px;
+      display: flex;
+      justify-content: space-between;
+      .logo{
+        margin-top: 18px;
+        width: 140px;
+      }
+    }
+    .redes{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      .work{
+        margin-top: 5px;
+      }
+      .rrss{
+        width: 100px;
+        margin-left: 50px;
+        font-size: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
