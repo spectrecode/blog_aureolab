@@ -9247,9 +9247,16 @@ header .velo .cotiza {
 }
 
 .blog_home .entradas .box_cuerpo_post .cuerpo_post .img_post {
+  max-width: 400px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog_home .entradas .box_cuerpo_post .cuerpo_post .img_post img {
+  width: 100%;
 }
 
 .blog_home .entradas .box_cuerpo_post .cuerpo_post .column_post img {
