@@ -4,8 +4,18 @@
 	box-sizing: border-box;
 	// cursor: none;
 }
+a{
+	text-decoration: none;
+	color: $white;
+}
+ul{
+	li{
+		list-style: none;
+	}
+}
 .section{
-	margin-bottom: 50px;
+	// margin-bottom: 70px;
+	padding-top: 70px;
 }
 .body{
 	font-family: $regular;
@@ -17,14 +27,6 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	width: 100%;
-}
-
-a{
-	text-decoration: none;
-	color: $white;
-}
-p{
-	margin: 0;
 }
 .yellow{
 	color: $yellow;
@@ -69,7 +71,7 @@ p{
 	}
 }
 .titulo{
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 	h3{
 		font-family: $bold;
 		font-size: 33px;
@@ -91,6 +93,100 @@ p{
 .hidden{
 	display: none;
 }
+.hidden_md{
+	display: none;
+}
+.buscador_blog{
+	background-color: #333333;
+	padding: 25px;
+	width: 100%;
+	.input_search{
+		position: relative;
+		background-color: $white;
+		i{
+			color: $grey;
+			position: absolute;
+			top: 10px;
+			bottom: 0;
+			font-size: 27px;
+			height: 30px;
+			margin-left: 8px;
+		}
+		input{
+			border: none;
+			outline: none;
+			width: 100%;
+			padding: 15px 20px;
+			padding-left: 38px;
+			&::placeholder{
+				color: $grey;
+			}
+			&:focus-visible{
+				// outline: none;
+			}
+		}
+	}
+	.menu_buscador{
+		p{
+			font-size: 22px;
+			font-family: $bold;
+		}
+		ul{
+			margin-top: 30px;
+			li{
+				list-style: none;
+				margin: 10px 0;
+				.active{
+					font-family: $bold;
+				}
+			}
+		}
+		i{
+			font-size: 13px;
+			padding-right: 10px;
+		}
+	}
+}
+
+// carrusel
+
+.box_carrusel{
+	max-width: 1014px;
+	width: 100%;
+	margin: 0 auto;
+}
+.paginador{
+	position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    bottom: -20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	.prev, .next,
+	.prevC, .nextC{
+		list-style: none;
+		width: 15px;
+		height: 35px;
+		background-size: contain;
+		cursor: pointer;
+	}
+	.prev, .prevC{
+		background: url("../img/arrow.png")no-repeat;
+	}
+	.next, .nextC{
+		background: url("../img/arrow.png")no-repeat;
+		transform: rotateY(180deg);
+	}
+}
+.slick-slide{
+	margin: 0 20px;
+}
+
+// internas
+// banner internas
 .hero{
 	height: 560px;
 	margin-top: 0;
@@ -99,43 +195,23 @@ p{
 		position: absolute;
 		height: 100%;
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		justify-content: center;
 		top: 0;
-	}	
+	}
+	.box_intro_serv{
+		display: flex;
+		align-items: center;
+		p{
+			width: 550px;
+			margin-right: 20px;
+		}
+	}
 }
-@media only screen and (min-width:768px){
-	.body{
-		line-height: normal;
-	}
-	.container{
-		max-width: 1240px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.btn_negro, .btn_amarillo{
-		width: 260px;
-	}
-	.titulo{
-		margin-bottom: 55px;
-		h3{
-			font-size: 40px;
-		}
-		.line{
-			height: 7px;
+.intro_internas{
+	.intro_internas_texto{
+		p{
+			margin: 20px 0;
 		}
 	}
-	.hero{
-		height: 485px;
-		.box_hero{
-			left: 0;
-			right: 0;
-			.titulo{
-				margin-bottom: 0;
-				margin-top: 60px;
-				h3{
-					font-size: 45px;
-				}
-			}
-		}
-	}	
 }
