@@ -11,15 +11,22 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 20px;
     img{
       transition: all ease-in-out .5s;
     }
     &.nav_logo{
       padding-top: 0;
       transition: all ease-in-out .5s;
+      img{
+        width: 200px;
+      }
     }
-    
+    .encabezado{
+      max-width: 290px;
+      display: flex;
+      align-items: center;
+    }
     .btn_negro{
       background: rgba($black, 0.7);
       transition: ease-in .3s;
@@ -57,7 +64,7 @@ header{
       height: 100%;
       margin-left: auto;
       width: 100%;
-      padding: 40px;
+      padding: 40px 50px;
       position: absolute;
       right: -400px;      
     }
@@ -81,9 +88,38 @@ header{
         }
       }
     }
+    .input_search{
+      position: relative;
+      // background-color: $white;
+      margin-top: 40px;
+      i{
+        color: $black;
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        font-size: 27px;
+        height: 30px;
+        margin-left: 8px;
+      }
+      input{
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 15px 20px;
+        padding-left: 38px;
+        background: transparent;
+        border: 2px solid $black;
+        &::placeholder{
+          color: $black;
+        }
+        &:focus-visible{
+          // outline: none;
+        }
+      }
+    }
     ul.item_menu{
-      padding-top: 35px;
-      padding-bottom: 85px;
+      padding-top: 25px;
+      padding-bottom: 50px;
       li{
         list-style: none;
         padding-bottom: 24px;
@@ -115,29 +151,8 @@ header{
         }     
       }
     }
-    ul.submenu{
-      padding-top: 21px;
-      padding-left: 42px;
-      li{
-        position: relative;
-        padding-bottom: 20px;
-        a{
-          font-size: 16px;
-          font-family: $semiBold;
-        }
-        &:last-child{
-          padding-bottom: 0;
-        }
-      }
-      li:before{
-        position: absolute;
-        content: "";
-        width: 16px;
-        height: 2px;
-        background-color: $black;
-        top: 7px;
-        left: -23px;
-      }
+    .btn_negro{
+      width: 100%;
     }
     .cotiza{
       margin: auto;

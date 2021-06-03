@@ -1,5 +1,5 @@
 .blog_home
-    .section.hero#particles-producto.particle-class
+    .hero#particles-producto.particle-class
         .container.box_hero
             .titulo
                 h3.yellow Blog Aureolab
@@ -20,71 +20,26 @@
                                 img(src="img/blog.png", width="450" alt="img blog")
                             .box_contenido
                                 .titulo_blog_post.yellow
-                                    .tag_blog.yellow 
-                                        p #UX/UI
+                                    .tag_blog
+                                        a(href="./categoria-1.html") #ventas 
+                                        a(href="") #soporte 
+                                        a(href="") #operaciones 
+                                    p.titulo_post_img Caso de Éxito: Hyla Chile
                                     .fecha_blog.yellow 03 de Febrero del 2021
-                                    p.titulo_post_img Análisis heurístico de los contenidos
                                 .contenido_blog
-                                    .texto_blog_post ¿Cómo hacer un análisis heurístico a nuestros contenidos? Es una pregunta que más de alguna vez nos hemos planteado, en especial dentro de una disciplina en desarrollo y crecimiento como lo es el UX Content.
+                                    .texto_blog_post La empresa Hyla Chile, líder de venta de sistema de limpieza de aire y habitaciones (aspiradoras gama alta), buscaba digitalizar su proceso de control de ventas, clientes y manejo de stock en terreno para poder así mejorar su gestión operacional.
                                     a(href="./post.html").yellow Leer más #[i.fas.fa-angle-right]
-                .otras_entradas
                     .titulo
                         h3.yellow Otras entradas
+                .otras_entradas
                     .box_posts
-                        .post
-                            .box_blog
-                                .titulo_blog
-                                    .img_blog    
-                                        img.filtro_gris(src="img/blog.png", width="450" alt="img blog")
-                                .contenido_blog
-                                    .titulo_blog_post.yellow
-                                        .tag_blog.yellow 
-                                            p #UX/UI
-                                        .fecha_blog.yellow 03 de Febrero del 2021
-                                        p.titulo_post_img Análisis heurístico de los contenidos
-                                    .texto_blog_post ¿Cómo hacer un análisis heurístico a nuestros contenidos? Es una pregunta que más de alguna vez nos hemos planteado, en especial dentro de una disciplina en desarrollo y crecimiento como lo es el UX Content.
-                                    a(href="./post.html").yellow Leer más #[i.fas.fa-angle-right]
-                        .post
-                            .box_blog
-                                .titulo_blog
-                                    .img_blog    
-                                        img.filtro_gris(src="img/blog.png", width="450" alt="img blog")
-                                .contenido_blog
-                                    .titulo_blog_post.yellow
-                                        .tag_blog.yellow 
-                                            p #UX/UI
-                                        .fecha_blog.yellow 03 de Febrero del 2021
-                                        p.titulo_post_img Análisis heurístico de los contenidos
-                                    .texto_blog_post ¿Cómo hacer un análisis heurístico a nuestros contenidos? Es una pregunta que más de alguna vez nos hemos planteado, en especial dentro de una disciplina en desarrollo y crecimiento como lo es el UX Content.
-                                    a(href="./post.html").yellow Leer más #[i.fas.fa-angle-right]
-                        .post
-                            .box_blog
-                                .titulo_blog
-                                    .img_blog    
-                                        img.filtro_gris(src="img/blog.png", width="450" alt="img blog")
-                                .contenido_blog
-                                    .titulo_blog_post.yellow
-                                        .tag_blog.yellow 
-                                            p #UX/UI
-                                        .fecha_blog.yellow 03 de Febrero del 2021
-                                        p.titulo_post_img Análisis heurístico de los contenidos
-                                    .texto_blog_post ¿Cómo hacer un análisis heurístico a nuestros contenidos? Es una pregunta que más de alguna vez nos hemos planteado, en especial dentro de una disciplina en desarrollo y crecimiento como lo es el UX Content.
-                                    a(href="./post.html").yellow Leer más #[i.fas.fa-angle-right]
-                        .post
-                            .box_blog
-                                .titulo_blog
-                                    .img_blog    
-                                        img.filtro_gris(src="img/blog.png", width="450" alt="img blog")
-                                .contenido_blog
-                                    .titulo_blog_post.yellow
-                                        .tag_blog.yellow 
-                                            p #UX/UI
-                                        .fecha_blog.yellow 03 de Febrero del 2021
-                                        p.titulo_post_img Análisis heurístico de los contenidos
-                                    .texto_blog_post ¿Cómo hacer un análisis heurístico a nuestros contenidos? Es una pregunta que más de alguna vez nos hemos planteado, en especial dentro de una disciplina en desarrollo y crecimiento como lo es el UX Content.
-                                    a(href="./post.html").yellow Leer más #[i.fas.fa-angle-right]
+                        include ../modules/post_vista
+                        include ../modules/post_vista
+                        include ../modules/post_vista
+                        include ../modules/post_vista
+
                     a(href="" target="_blank").btn_blog.btn_amarillo Ver más publicaciones
-                .buscador_blog 
+                .buscador_blog.hidden_md
                     .box_buscador 
                         .input_search 
                             i.icon-search
@@ -96,14 +51,14 @@
                                 li
                                     a(href="") Todo
                                 li
-                                    a(href="./categoria-1.html") #[i.icon-folder.yellow] Categoria 1
+                                    a(href="./categoria-1.html") #[i.icon-folder.yellow] #Categoria 1
                                 li
-                                    a(href="") #[i.icon-folder.yellow] Categoria 1
+                                    a(href="") #[i.icon-folder.yellow] #Categoria 2
                                 li
-                                    a(href="") #[i.icon-folder.yellow] Categoria 1
+                                    a(href="") #[i.icon-folder.yellow] #Categoria 3
                                 li
-                                    a(href="") #[i.icon-folder.yellow] Categoria 1
+                                    a(href="") #[i.icon-folder.yellow] #Categoria 4
                                 li
-                                    a(href="") #[i.icon-folder.yellow] Categoria 1
+                                    a(href="") #[i.icon-folder.yellow] #Categoria 5
                                             
 
