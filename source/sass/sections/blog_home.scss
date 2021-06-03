@@ -19,7 +19,6 @@
             width: 100%;
             .titulo_blog{
                 width: 100%;
-                margin-bottom: 40px;
                 img{
                     width: 100%;
                     object-fit: cover;
@@ -56,6 +55,7 @@
             }
         }
         .entrada_reciente{
+            margin-bottom: 40px;
             .box_blog{
                 position: relative;
                 .titulo_blog{

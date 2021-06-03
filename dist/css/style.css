@@ -9153,7 +9153,6 @@ header .velo .cotiza {
 
 .blog_home .entradas .box_blog .titulo_blog {
   width: 100%;
-  margin-bottom: 40px;
 }
 
 .blog_home .entradas .box_blog .titulo_blog img {
@@ -9190,6 +9189,10 @@ header .velo .cotiza {
 
 .blog_home .entradas .box_blog .contenido_blog .texto_blog_post {
   margin-bottom: 20px;
+}
+
+.blog_home .entradas .entrada_reciente {
+  margin-bottom: 40px;
 }
 
 .blog_home .entradas .entrada_reciente .box_blog {
