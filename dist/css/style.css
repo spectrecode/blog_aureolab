@@ -9133,6 +9133,10 @@ header .velo .cotiza {
   font-family: "aileronbold";
 }
 
+.blog_home .titulo .tag_blog {
+  margin-bottom: 30px;
+}
+
 .blog_home .entradas {
   margin-bottom: 50px;
 }
@@ -9159,12 +9163,12 @@ header .velo .cotiza {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 255px;
+  height: 200px;
 }
 
-.blog_home .entradas .box_blog .titulo_blog_post .tag_blog a {
+.blog_home .entradas .box_blog .titulo_blog_post .tag_blog > a {
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   color: #FED136;
   margin-right: 5px;
   margin-bottom: 20px;
@@ -9176,9 +9180,11 @@ header .velo .cotiza {
 }
 
 .blog_home .entradas .box_blog .titulo_blog_post .titulo_post_img {
-  font-family: "aileronblack";
-  font-size: 22px;
+  font-family: "aileronbold";
+  font-size: 20px;
   margin-bottom: 10px;
+  color: #FED136;
+  display: block;
 }
 
 .blog_home .entradas .box_blog .contenido_blog {
@@ -9233,6 +9239,11 @@ header .velo .cotiza {
 }
 
 .blog_home .entradas .otras_entradas .box_posts .post, .blog_home .entradas .box_post .box_posts .post {
+  margin-bottom: 30px;
+}
+
+.blog_home .entradas .box_cuerpo_post .cuerpo_post .imagen_post_principal {
+  width: 100%;
   margin-bottom: 30px;
 }
 

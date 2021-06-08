@@ -10,6 +10,11 @@
             font-family: $bold;
         }
     }
+    .titulo{
+        .tag_blog{
+            margin-bottom: 30px;
+        }
+    }
     .entradas{
         margin-bottom: 50px;
         .box_blog{
@@ -22,14 +27,14 @@
                 img{
                     width: 100%;
                     object-fit: cover;
-                    height: 255px;
+                    height: 200px;
                 }
             }
             .titulo_blog_post{
                 .tag_blog{
-                    a{
+                    >a{
                         display: inline-block;
-                        font-size: 10px;
+                        font-size: 12px;
                         color: $yellow;
                         margin-right: 5px;
                         margin-bottom: 20px;
@@ -40,9 +45,11 @@
                     font-size: 12px;
                 }
                 .titulo_post_img {
-                    font-family: $blackF;
-                    font-size: 22px;
+                    font-family: $bold;
+                    font-size: 20px;
                     margin-bottom: 10px;
+                    color: $yellow;
+                    display: block;
                 }
             }
             .contenido_blog{
@@ -90,6 +97,10 @@
         }
         .box_cuerpo_post{
             .cuerpo_post{
+                .imagen_post_principal{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
                 p{
                     margin-bottom: 10px;
                 }
