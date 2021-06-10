@@ -9306,11 +9306,13 @@ footer .box_footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .box_footer .logo {
-  margin-top: 18px;
-  width: 140px;
+  width: 220px;
 }
 
 footer .redes {
@@ -9328,6 +9330,8 @@ footer .redes {
 
 footer .redes .work {
   margin-top: 5px;
+  font-size: 14px;
+  text-align: right;
 }
 
 footer .redes .rrss {
